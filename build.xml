@@ -10,10 +10,10 @@
     <property name="jmeter.home" value="E:/apache-jmeter-5.1.1" />
 	
 	<!-- （2）jmeter生成jtl格式的结果报告的路径-->
-    <!-- jmeter生成jtl格式的结果报告的路径， value="E:/standard-catalog/jtl"-->
-	<!-- jmeter生成html格式的结果报告的路径，value="E:/standard-catalog/html"-->
-    <property name="jmeter.result.jtl.dir" value="E:/standard-catalog/jtl" />
-    <property name="jmeter.result.html.dir" value="E:/standard-catalog/html" />
+    <!-- jmeter生成jtl格式的结果报告的路径， value="E:/Jenkins/workspace/jmetr-ant/jtl"-->
+	<!-- jmeter生成html格式的结果报告的路径，value="E:/Jenkins/workspace/jmetr-ant/html"-->
+    <property name="jmeter.result.jtl.dir" value="E:/Jenkins/workspace/jmetr-ant/jtl" />
+    <property name="jmeter.result.html.dir" value="E:/Jenkins/workspace/jmetr-ant/html" />
 	
 	<!-- （3）生成的报告的前缀:value-->
     <property name="ReportName" value="InterfaceReport"/>
@@ -32,7 +32,7 @@
 		
 		
              <!-- （4）声明要运行的脚本。*.jmx 指包含此目录下的所有jmeter脚本，需要改成自己本地的目录-->
-            <testplans dir="E:/standard-catalog" includes="*.jmx" />
+            <testplans dir="E:/Jenkins/workspace/jmetr-ant" includes="*.jmx" />
 			
 			
             <property name="jmeter.save.saveservice.output_format" value="xml"/>
@@ -51,7 +51,7 @@
 			  out="${jmeter.result.htmlName}" 
 			  
 		
-			  style="E:/standard-catalog/xsl/jmeter.results.shanhe.me.xsl">
+			  style="E:/Jenkins/workspace/jmetr-ant/xsl/jmeter.results.shanhe.me.xsl">
 			  <!--（5）样式目录：/extras/xxx.xsl -->
  
 			  
